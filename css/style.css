@@ -1,0 +1,110 @@
+/* contoh selector di external */
+p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+#bgnavbar{
+    background-image: url(../img/bg3.png);
+}
+
+body{
+    background: linear-gradient(130deg, rgba(196,225,255,0.648) 0%, rgba(218,242,255,0.501) 99%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Mengatur jenis font untuk teks */
+    font-size: 16px; /* Mengatur ukuran font untuk teks */
+    line-height: 1.6; /* Mengatur tinggi baris untuk teks */
+}
+
+fieldset, legend{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+legend{
+    padding: 10px;
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+table{
+    border: 10px;
+    margin: auto;
+}
+
+td, thead, tfoot{
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+tr:hover#menu{
+    background-color: rgb(153, 135, 253);
+    color: rgb(0, 0, 0);
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+/* contoh selector id dapat masuk ke semua tag */
+#paragraph {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: rgb(0, 2, 119);
+}
+
+/* id yang di khusus kan untuk tag li
+li#paraghraph {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: aqua;
+} */
+
+/* contoh selector class */
+
+/* ul, li, a.item:link, a.item:visited, a.item:active { */
+    /* text-decoration: none; menghilangkan garis pada link */
+    /* list-style: none; menghilangkan titik pada list */
+    /* display: block; mendisplay a sebegai block */
+    /* float: left; memposisikan a untuk kebagian kiri */
+    /* padding: 2px 3px; memberi jarak dan membentuk persegi */
+    /* background-color: white; mewarnai block */
+/*}*/
+
+/*ID Selector untuk ul dengan ID "myList"*/
+#myList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ID Selector untuk li dengan ID "listItem1" */
+#listItem {
+    float: left;
+    padding: 2px 3px;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+/* ID Selector untuk a dengan class "item" dan state :link */
+a.item:link {
+    text-decoration: none;
+}
+
+/* ID Selector untuk a dengan class "item" dan state :visited */
+a.item:visited {
+    text-decoration: none;
+}
+
+/* ID Selector untuk a dengan class "item" dan state :active */
+a.item:active {
+    text-decoration: none;
+}
